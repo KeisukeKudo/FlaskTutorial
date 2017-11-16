@@ -10,5 +10,6 @@ class Entry(db.Model):
     def __reqr__(self):
         return '<Entry id={id} title={title!r}>'.format(id=self.id, title=self.title)
 
+
 def init():
     db.create_all()
